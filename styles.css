@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* CSS resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Makes images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* .attribution {
     font-size: 11px;
     text-align: center;
