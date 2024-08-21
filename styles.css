@@ -102,12 +102,30 @@ body {
 .share-btn {
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
-  width: 33px;
-  height: 33px;
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.share-btn svg path {
+  transition: fill 0.3s ease;
+}
+
+/* Change background and icon color on button hover */
+.share-btn:hover {
+  background-color: var(
+    --desaturated-dark-blue
+  ); /* Background color on hover */
+}
+
+.share-btn:hover svg path {
+  fill: var(--white); /* Icon color on hover */
+}
+
 /* .attribution {
     font-size: 11px;
     text-align: center;
@@ -125,14 +143,27 @@ body {
   }
 
   .card-image {
-    flex: 1;
-  }
-
-  .card-content {
-    flex: 2;
+    flex: 40%;
   }
 
   .card-image img {
     height: 280px;
+    object-fit: cover;
+    object-position: center left;
+  }
+
+  .card-content {
+    flex: 60%;
+    padding: 32px 40px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+  }
+
+  .card-text {
+    margin-bottom: 20px;
   }
 }
