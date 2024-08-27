@@ -56,20 +56,17 @@ body {
   width: 100%;
 }
 
-.card-content {
-  padding: 36px 32px 20px;
-}
-
 .card-title {
   font-size: 1rem;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.2px;
   color: var(--very-dark-grayish-blue);
+  margin: 36px 32px 0;
 }
 
 .card-text {
-  margin: 12px 0 32px;
+  margin: 12px 32px 0;
   color: var(--desaturated-dark-blue);
 }
 
@@ -78,6 +75,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card-author {
+  margin: 32px 32px 20px;
 }
 
 .author-profile {
@@ -147,23 +148,27 @@ body {
   }
 
   .card-image img {
-    height: 280px;
+    height: 284px;
     object-fit: cover;
     object-position: center left;
   }
 
   .card-content {
     flex: 60%;
-    padding: 32px 40px;
   }
 
   .card-title {
     font-size: 1.25rem;
     line-height: 28px;
     letter-spacing: 0.25px;
+    margin: 32px 40px 0;
   }
 
   .card-text {
-    margin-bottom: 20px;
+    margin: 12px 40px 0;
+  }
+
+  .card-author {
+    margin: 20px 40px 32px;
   }
 }
