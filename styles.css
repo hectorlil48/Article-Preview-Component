@@ -36,19 +36,23 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  letter-spacing: 0.12px;
-  line-height: 20px;
+  letter-spacing: 0.0075rem;
+  line-height: 1.25rem;
+  flex-direction: column;
+}
+
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  max-width: 350px;
-  margin: 0 24px;
-  border-radius: 10px;
+  max-width: 21.875rem;
+  margin: 0 1.5rem;
+  border-radius: 0.625rem;
   background-color: var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-image {
@@ -56,43 +60,41 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 10px 10px 0 0;
-  height: 200px;
+  border-radius: 0.625rem 0.625rem 0 0;
+  height: 12.5rem;
 }
 
 .card-title {
   font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 4rem;
   letter-spacing: 0.2px;
   color: var(--very-dark-grayish-blue);
-  margin: 36px 32px 0;
+  margin: 2.25rem 2rem 0;
 }
 
 .card-text {
-  margin: 12px 32px 0;
+  margin: 0.75rem 2rem 0;
   color: var(--desaturated-dark-blue);
 }
 
 .card-author,
 .author-profile {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .card-author {
-  padding: 32px 32px 20px;
+  padding: 2rem 2rem 1.25rem;
   position: relative;
 }
 
 .author-profile {
-  gap: 16px;
+  gap: 1rem;
 }
 
 .author-image {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 
@@ -108,11 +110,8 @@ body {
 .share-btn {
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 5;
@@ -147,24 +146,21 @@ body {
 .share-box p {
   font-size: 0.8rem;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
   color: var(--grayish-blue);
-  margin-right: 21px;
-  margin-left: 32px;
+  margin-right: 3.5rem;
+  margin-left: 2rem;
 }
 
 .space-right {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .share-box {
   width: 100%;
-  height: 76px;
+  height: 4.75rem;
   background-color: hsl(217, 19%, 35%);
   border-radius: 0 0 10px 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   color: #fff;
   position: absolute;
   left: 0;
@@ -175,27 +171,28 @@ body {
   display: none;
 }
 
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  } */
+.attribution {
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .card {
-    max-width: 730px;
+    max-width: 45.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .card-image {
-    width: 285px;
+    width: 17.8125rem;
     background-position: left;
     border-radius: 10px 0 0 10px;
-    height: 280px;
+    height: 17.5rem;
   }
 
   .card-content {
@@ -204,28 +201,25 @@ body {
 
   .card-title {
     font-size: 1.25rem;
-    line-height: 28px;
+    line-height: 1.75rem;
     letter-spacing: 0.25px;
-    margin: 32px 40px 0;
+    margin: 2rem 2.5rem 0;
   }
 
   .card-text {
-    margin: 12px 40px 0;
+    margin: 0.75rem 2.5rem 0;
   }
 
   .card-author {
-    margin: 20px 40px 32px;
+    margin: 1.25rem 2.5rem 2rem;
     padding: 0;
   }
 
   .share-box {
-    width: 248px;
-    height: 55px;
+    width: 15.5rem;
+    height: 3.4375rem;
     background-color: hsl(217, 19%, 35%);
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     position: absolute;
     left: 224px;
