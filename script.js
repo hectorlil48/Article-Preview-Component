@@ -4,6 +4,8 @@ const shareBox = document.querySelector("#share-box");
 shareButton.addEventListener("click", () => {
   shareBox.classList.toggle("hidden");
   shareButton.classList.toggle("active");
+});
 
+shareButton.addEventListener("touchend", () => {
   shareButton.blur();
 });
