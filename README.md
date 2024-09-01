@@ -26,20 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/desktop.png)
+![](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/hectorlil48/article-preview-component)
+- Live Site URL: [Live site URL here](https://hectorlil48.github.io/article-preview-component/)
 
 ## My process
 
@@ -48,52 +41,42 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I struggled with this project. I am still trying to understand CSS positioning and I'm not very confident about it. However, I managed to get the popup div to overlay the under div when it is clicked on, and I successfully aligned my divs as I wanted. I definitely need more practice with CSS positioning. JavaScript wasn't too difficult—I was able to add the hidden class to my button along with the active styles.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.share-box {
+  width: 248px;
+  height: 55px;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  left: 224px;
+  bottom: 64px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+shareButton.addEventListener("click", () => {
+  shareBox.classList.toggle("hidden");
+  shareButton.classList.toggle("active");
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to continue working with CSS positioning in order to improve my understanding. Additionally, I plan to practice using Javascript to enhance my skills.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools](https://www.w3schools.com/) - W3Shools is the place I find anything I want to find out how to use. This time it was understanding CSS positioning.
+- [Google](https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjunvn4xP3-AhX4j4kEHS7LCRwQPAgJ) - You can find almost anything on Google. It helped me get used to using position in my CSS.
 
 ## Author
 
